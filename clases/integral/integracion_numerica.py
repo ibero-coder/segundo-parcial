@@ -8,7 +8,7 @@ class IntegracionNumerica(object):
         self.E = 0.00001
         self.num_seg_inicial = 10
 
-    def gamma(self, n: float) -> float:
+    def gamma(self, n: float):
         if n == 0.5:
             return math.sqrt(math.pi)
         elif n == 1.0:
@@ -16,7 +16,7 @@ class IntegracionNumerica(object):
         else:
             return (n - 1) * self.gamma(n - 1)
 
-    def funcionT(self, xi: float) -> float:
+    def funcionT(self, xi: float):
         dof = self.dof
         numerador   = self.gamma((dof + 1) / 2)
         denominador = math.sqrt(dof * math.pi) * self.gamma(dof / 2)
@@ -24,7 +24,7 @@ class IntegracionNumerica(object):
         potencia    = -((dof + 1) / 2)
         return constante * ((1 + (xi ** 2) / dof) ** potencia)
 
-    def simpson(self, num_seg: int) -> float:
+    def simpson(self, num_seg: int):
         W = self.x / num_seg
         suma_impares = sum(4 * self.funcionT(i * W) for i in range(1, num_seg, 2))
         suma_pares   = sum(2 * self.funcionT(i * W) for i in range(2, num_seg - 1, 2))
