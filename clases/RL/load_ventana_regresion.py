@@ -54,7 +54,7 @@ class VentanaRegresion(QtWidgets.QDialog):
 
     def _mostrarCalculados(self, regresion: RegresionLineal, yk: float):
         self.resultado1.setText(f"{regresion.b0:.4f}")
-        self.resultado2.setText(f"{regresion.b1:.4f}")
+        self.resultado2.setText(f"{regresion.b1:.4f}") 
         self.resultado3.setText(f"{regresion.rxy:.4f}")
         self.resultado4.setText(f"{regresion.r2:.4f}")
         self.resultado5.setText(f"{yk:.4f}")
