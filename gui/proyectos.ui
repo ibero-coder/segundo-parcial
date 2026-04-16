@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>621</width>
-    <height>462</height>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -97,8 +97,22 @@ QAction {
     <property name="title">
      <string>Proyectos</string>
     </property>
-    <addaction name="actionRegresi_n_lineal"/>
-    <addaction name="actionIntegraci_n_numerica"/>
+    <widget class="QMenu" name="menuTercer_parcial">
+     <property name="title">
+      <string>Tercer parcial</string>
+     </property>
+     <addaction name="actionCalcular_x"/>
+     <addaction name="actionPrograma4"/>
+    </widget>
+    <widget class="QMenu" name="menuSegundo_Parcial">
+     <property name="title">
+      <string>Segundo Parcial</string>
+     </property>
+     <addaction name="actionRegresion"/>
+     <addaction name="actionIntegracion"/>
+    </widget>
+    <addaction name="menuSegundo_Parcial"/>
+    <addaction name="menuTercer_parcial"/>
     <addaction name="separator"/>
     <addaction name="actionSalir"/>
    </widget>
@@ -118,6 +132,26 @@ QAction {
   <action name="actionSalir">
    <property name="text">
     <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionCalcular_x">
+   <property name="text">
+    <string>Calcular x</string>
+   </property>
+  </action>
+  <action name="actionRegresion">
+   <property name="text">
+    <string>Regresión lineal</string>
+   </property>
+  </action>
+  <action name="actionIntegracion">
+   <property name="text">
+    <string>Integración numérica</string>
+   </property>
+  </action>
+  <action name="actionPrograma4">
+   <property name="text">
+    <string>Programa 4</string>
    </property>
   </action>
  </widget>

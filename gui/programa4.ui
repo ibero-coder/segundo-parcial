@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>494</width>
+    <height>514</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>494</width>
+    <height>514</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fondo general */
+QDialog{
+    background-color: #f5f7fa;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 18px;
+}
+
+/* Labels */
+QLabel#resultadostxt{
+    color: #1a1a1a;
+    font-weight: 1000;
+}
+
+/* Campos de texto */
+QLineEdit{
+    background-color: white;
+    border: 2px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 6px;
+    selection-background-color: #409eff;
+}
+
+QLineEdit:focus{
+    border: 2px solid #409eff;
+}
+
+/* Botones */
+QPushButton{
+    background-color: #409eff;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover{
+    background-color: #66b1ff;
+}
+
+QPushButton:pressed{
+    background-color: #337ecc;
+}
+
+/* GroupBox (contenedores como Casos y Resultados) */
+QGroupBox{
+    border: 2px solid #e4e7ed;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+QGroupBox::title{
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 10px;
+    color: #409eff;
+}
+
+/* Separadores visuales */
+QFrame{
+    color: #dcdfe6;
+}</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>182</width>
+     <height>356</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>r_xy</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resRxy"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>r2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resR2"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>tail area</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resTail"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>b0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resB0"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>b1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resB1"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>yk</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resYk"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>range</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resRange"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>UPI</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resUpi"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">color: #1a1a1a;
+font-weight: 500;</string>
+        </property>
+        <property name="text">
+         <string>LPI</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="resLpi"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_10">
+    <item>
+     <widget class="QPushButton" name="botoncaso1">
+      <property name="text">
+       <string>Caso de prueba 1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="botoncaso2">
+      <property name="text">
+       <string>Caso de prueba 2</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
