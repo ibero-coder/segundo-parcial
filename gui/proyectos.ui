@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>621</width>
+    <width>617</width>
     <height>452</height>
    </rect>
   </property>
@@ -89,7 +89,7 @@ QAction {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>621</width>
+     <width>617</width>
      <height>44</height>
     </rect>
    </property>
@@ -113,6 +113,7 @@ QAction {
     </widget>
     <addaction name="menuSegundo_Parcial"/>
     <addaction name="menuTercer_parcial"/>
+    <addaction name="actionFINAL"/>
     <addaction name="separator"/>
     <addaction name="actionSalir"/>
    </widget>
@@ -152,6 +153,11 @@ QAction {
   <action name="actionPrograma4">
    <property name="text">
     <string>Programa 4</string>
+   </property>
+  </action>
+  <action name="actionFINAL">
+   <property name="text">
+    <string>FINAL</string>
    </property>
   </action>
  </widget>
